@@ -7,11 +7,70 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" >
   </head>
   <body>
-    <h1>Hello, worlddddddddd!</h1>
     <div class="container">
         <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
+          <div class="text-end">
+            <img src="img/2.png" width="120" style="height: 100%;" alt="4">
+          </div>
+<!--REGISTRARSE-->
+            <div class="col color-reg" >
+              <h2 class="fw-bold text-left mx-5 py-5">Regístrarse</h2>
+              <form action="#">
+                <div class="mb-4 mx-5">
+                  <label for="nombre" class="form-label">Nombre Completo</label>
+                  <input type="text" class="form-control" name="nombre" id="">
+                </div>
+                <div class="mb-4 mx-5">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" name="email">
+                </div>
+                <div class="mb-4 mx-5">
+                  <label for="password" class="form-label">Password </label>
+                  <input type="password" class="form-control" name="password" aria-describedby="passwordHelpInline">
+                  <small id="passwordHelpInline" class="text-muted">
+                    Must be 8-20 characters long.
+                  </small>
+                </div>
+                <div class="mb-4 mx-5">
+                  <label for="conf-password" class="form-label">Confirmacion Password </label>
+                  <input type="password" class="form-control" name="conf-password" aria-describedby="passwordHelpInline">
+                  <small id="passwordHelpInline" class="text-muted">
+                    Must be 8-20 characters long.
+                  </small>
+                </div>
+                <div class="mb-4 mx-5 form-check">
+                  <input type="checkbox" name="connected" class="form-check-input" id="" >
+                  <label for="connected" class="form-check-label">Aceptar terminos y condiciones</label>
+                </div>
+
+                <div class="d-grid mb-5 mx-5">
+                  <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                </div>
+              </form>
+            </div>
+<!--INICIAR SESION-->
+            <div class="col  color-init">
+              <h2 class="fw-bold text-left py-5  mx-5">Iniciar Sesión</h2>
+              <!------LOGIN-->
+              <form action="#">
+                <div class="mb-4 mx-5">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" name="email">
+                </div>
+                <div class="mb-4 mx-5">
+                  <label for="password" class="form-label">Password </label>
+                  <input type="password" class="form-control" name="password">
+                </div>
+                <div class="mb-4 mx-5 form-check">
+                  <input type="checkbox" name="connected" class="form-check-input" id="" >
+                  <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                </div>
+
+                <div class="d-grid  mx-5">
+                  <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                </div>
+              </form>
+            </div>
         </div>
     </div>
     <script src="js/bootstrap.bundle.min.js" ></script>
